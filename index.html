@@ -4,6 +4,7 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <link rel="import" href="main.html" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;700&display=swap"
       rel="stylesheet"
@@ -18,9 +19,10 @@
     <h1>
       <a href="main.html" target="_blank">What I Own?</a>
     </h1>
+
     <div class="question">
       <label for="name">name:</label>
-      <input id="name" />
+      <input type="text" id="name" />
       &ensp;
       <label for="date">date:</label>
       <input type="date" id="date" />
@@ -28,16 +30,62 @@
       <label for="price">price:</label>
       <input id="price" />
       &thinsp;
-      <button type="submit">create</button>
+      <button class="create_Button" type="submit">create</button>
     </div>
+
     <div class="login">
       <label for="email">email:</label>
       <input id="email" />
       &ensp;
       <label for="pw">pw:</label>
       <input type="password" "id="pw" /> &thinsp;
-      <button type="butoon">sign in</button>
-      <button type="butoon">sign up</button>
+      <button type="button">sign in</button>
+      <button class="joinBtn" type="button">Join</button>
     </div>
+
+    <div class="create_modal">
+      <div class="create">
+        <div id="create_1">
+          <label for="pictrue">picture: </label>
+          <input id="picture" type="image" />
+        </div>
+        <div id="create_2">
+          <label for="name">name: </label>
+          <input id="name" type="text" />
+        </div>
+        <div id="create_3">
+          <label for="date">date: </label>
+          <input id="date" type="date" />
+        </div>
+        <div id="create_4">
+          <label for="price">price: </label>
+          <input id="price" />
+        </div>
+        <div id="create_5">
+          <label for="description">description: </label>
+          <input id="description" />
+        </div>
+        <div id="create_discard">
+          <button id="discard_button">discard</button>
+        </div>
+        <div id="create_save">
+          <button id="save_button">save</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="join_modal">
+      <div class="join">
+        <span class="join_head">Join WIO</span>
+        <input type="text" placeholder="First name and last name" />
+        <input type="email" placeholder="Enter your email" />
+        <input type="password" placeholder="Create your password" />
+        <button class="join_button">join with email</button>
+        <span class="join_close">X</span>
+      </div>
+    </div>
+
+    <script src="create.js"></script>
+    <script src="join.js"></script>
   </body>
 </html>
