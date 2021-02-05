@@ -1,91 +1,63 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="import" href="main.html" />
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+    rel="stylesheet"
+  />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta charset="utf-8" />
 
-    <meta charset="utf-8" />
+  <title>What I Own?</title>
+</head>
 
-    <title>What I Own?</title>
-  </head>
+<body>
+  <h1>What I Own?</h1>
+  <div class="container">
+    <div class="login">Login</div>
+    <div class="join">Join</div>
+    <span class="about">about</span>
+  </div>
 
-  <body>
-    <h1>
-      <a href="main.html" target="_blank">What I Own?</a>
-    </h1>
-
-    <div class="question">
-      <label for="name">name:</label>
-      <input type="text" id="name" />
-      &ensp;
-      <label for="date">date:</label>
-      <input type="date" id="date" />
-      &ensp;
-      <label for="price">price:</label>
-      <input id="price" />
-      &thinsp;
-      <button class="create_Button" type="submit">create</button>
+  <!--login modal-->
+  <div class="login_modal">
+    <div class="loginModal">
+      <h3>Login</h3>
+      <input placeholder="enter your id" />
+      <input placeholder="enter your pw" />
+      <div>login</div>
+      <span>reset id/pw</span>
+      <span>X</span>
     </div>
-
-    <div class="login">
-      <label for="email">email:</label>
-      <input id="email" />
-      &ensp;
-      <label for="pw">pw:</label>
-      <input type="password" "id="pw" /> &thinsp;
-      <button type="button">sign in</button>
-      <button class="joinBtn" type="button">Join</button>
+  </div>
+  <!--join modal-->
+  <div class="join_modal">
+    <div class="joinModal">
+      <h3>Join</h3>
+      <input placeholder="enter your id" />
+      <input placeholder="enter your pw" />
+      <div>Join</div>
+      <span>X</span>
     </div>
-
-    <div class="create_modal">
-      <div class="create">
-        <div id="create_1">
-          <label for="pictrue">picture: </label>
-          <input id="picture" type="image" />
-        </div>
-        <div id="create_2">
-          <label for="name">name: </label>
-          <input id="name" type="text" />
-        </div>
-        <div id="create_3">
-          <label for="date">date: </label>
-          <input id="date" type="date" />
-        </div>
-        <div id="create_4">
-          <label for="price">price: </label>
-          <input id="price" />
-        </div>
-        <div id="create_5">
-          <label for="description">description: </label>
-          <input id="description" />
-        </div>
-        <div id="create_discard">
-          <button id="discard_button">discard</button>
-        </div>
-        <div id="create_save">
-          <button id="save_button">save</button>
-        </div>
+  </div>
+  <!--about modal-->
+  <div class="about_modal">
+    <div class="aboutModal">
+      <h3>About</h3>
+      <div class="about_box">
+        <p>
+          I thought about being Nomadic Life, the first thing is being
+          minimalist.
+          <p></p>
+          If you can count and you can label on your all Items, you are ready.
+          <p></p>
+          Let’s count your items, sort out and search it with name or date.
+        </p>
       </div>
+      <span class="close">X</span>
     </div>
-
-    <div class="join_modal">
-      <div class="join">
-        <span class="join_head">Join WIO</span>
-        <input type="text" placeholder="First name and last name" />
-        <input type="email" placeholder="Enter your email" />
-        <input type="password" placeholder="Create your password" />
-        <button class="join_button">join with email</button>
-        <span class="join_close">X</span>
-      </div>
-    </div>
-
-    <script src="create.js"></script>
-    <script src="join.js"></script>
-  </body>
+  </div>
+</body>
 </html>
